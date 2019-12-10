@@ -1,0 +1,49 @@
+body {
+		font-family: georgia;
+		background-color: black;
+}
+.kotak {
+		width:100px;
+		height:100px;
+		margin:5px;
+		float:left;
+
+}
+p {
+		margin-top: 0px;
+		margin-bottom: 10px;
+		margin-right: 0px;
+		margin-left: 10px;
+}
+#page-wrap {
+		width: 700px;
+		margin:0px auto 0px auto;
+		padding:50px;
+		background-color: white;
+}
+#content {
+		width:460px;
+		margin-left: 20px;
+		padding-left: 20px;
+		border-left:1px solid #333;
+		height:450px;
+		float:right;
+
+}
+#sidebar {
+		width:180px;
+		float:left;
+}
+.footer {
+		text-align: center;
+		background-color: #333;
+		font-family: verdana;
+		color:white;
+		width:800px;
+		height:45px;
+		margin:1px auto 1px auto;
+		padding-top:20px;
+}
+.clear {
+		clear:both;
+}

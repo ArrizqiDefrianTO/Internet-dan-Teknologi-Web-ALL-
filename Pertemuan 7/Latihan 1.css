@@ -1,0 +1,10 @@
+.kotak {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-right: 10px;
+	background: black;
+}
+.kotak1 { opacity: .8; }
+.kotak2 { opacity: .5; }
+.kotak3 { opacity: .2; }

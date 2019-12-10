@@ -1,0 +1,170 @@
+body{
+	background-color: darkgrey;
+}
+.header{
+	background-color: black;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 50px;
+	z-index: 9999;
+}
+.header h1{
+	color: white;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.kanan{
+	float: right;
+	margin-top: -50px;
+	padding-right: 15px;
+}
+.kanan a{
+	font-size: 20px;
+	color: white;
+	margin-right: 5px;
+	text-decoration: none;
+}
+.page-wrap{
+	background-color: #fff;
+	width: 1100px;
+	margin: 80px auto;
+	box-shadow: 10px 10px 10px #333;
+}
+.content{
+	background-color: white;
+	width: 900px;
+	padding: 20px;
+	float: right;
+}
+.content img{
+	width: 150px;
+	height: 150px;
+	margin-left: 25px;
+	margin-right: 10px;
+	filter: grayscale(60%);
+	-o-transition: grayscale(60%);
+	-moz-transition: grayscale(60%);
+	-webkit-transition: grayscale(60%);
+	-ms-transition: grayscale(60%);
+}
+img{
+	margin-top: 10px;
+}
+.content img:hover{
+	filter: none;
+}
+.kotak{
+	position: relative;
+	float: left;
+	width: 200px;
+	border: 1px solid white;
+	margin-right: 20px;
+	height: 220px;
+	box-shadow: 1px 1px 10px grey;
+}
+.kotak p{
+	text-align: center;
+	line-height: 13px;
+}
+.content h1{
+	font-family: "corbel";
+}
+.show{
+	background-color: grey;
+	color: white;
+	text-align: center;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	margin-top: 250px;
+	margin-left: 768px;
+}
+.show a{
+	text-decoration: none;
+	color: white;
+}
+.sidebar{
+	width: 200px;
+	position: absolute;
+	margin-top: 40px;
+	padding-left: 15px;
+	clear: both;
+}
+.menu{
+	background-color: grey;
+	height: 30px;
+	width: 140px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+.menu:hover{
+	background-color: black;
+}
+.produk{
+	background-color: grey;
+	height: 30px;
+	width: 140px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+.produk a{
+	color: white;
+	text-decoration: none;
+}
+.produk:hover{
+	background-color: black;
+}
+.branches{
+	background-color: grey;
+	height: 30px;
+	width: 140px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+.branches a{
+	color: white;
+	text-decoration: none;
+}
+.branches:hover{
+	background-color: black;
+}
+.faqs{
+	background-color: grey;
+	height: 30px;
+	width: 140px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+.faqs a{
+	color: white;
+	text-decoration: none;
+}
+.faqs:hover{
+	background-color: black;
+}
+.clear{
+	clear: both;
+}
+.footer{
+	background-color: black;
+	line-height: 40px;
+	height: 40px;
+}
+.footer .copy {
+	color: white;
+	text-align: center;
+}

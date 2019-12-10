@@ -1,0 +1,91 @@
+@font-face {
+	font-family:'Action_Man-Regular';
+	src : url('../font/Action_Man-webfont.eot');
+	src : url('../font/Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
+		  url('../font/Action_Man-webfont.woff') format('woff'),
+		  url('../font/Action_Man-webfont.ttf') format('truetype'),
+		  url('../font/Action_Man-webfont.svg#ActionManRegular') format('svg');
+		  font-weight: normal;
+		  font-style: normal;
+}
+body {
+	
+	font-family: arial;
+	background: #ddd url(../images/body-bg.png);
+	margin: 0; 
+	padding: 0; 
+}
+h1 {
+	font-family: 'Action_Man-Regular' ;
+}	
+
+#page-wrap {
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 115px;
+	padding: 20px;
+	background: white;
+	position: relative;
+
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+.kotak {
+	width: 80px;
+	height: 100px;
+	margin: 0 10px 10px 0;
+	float: left;
+}
+
+#content {
+	width: 460px;
+	float: right;
+	margin-right: 20px;
+	padding-right: 20px;
+	min-height: 400px;
+}
+
+#sidebar {
+	width: 180px;
+	float: left;
+	border-right: 1px solid #333;
+	min-height: 500px;}
+
+#footer {
+	text-align: center;
+	background-color: #333;
+	font-family: verdana;
+	font-size: 11px;
+	color: white;
+	width: 740px;
+	height: 40px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+.bg-kanan {
+	width: 400px;
+	height: 432px;
+	background: url(../images/bg_kanan.png) no-repeat;
+	position: absolute;
+	bottom: -100px;
+	right: -220px;
+	z-index: -1;
+}
+
+.bg-kiri {
+	width: 400px;
+	height: 432px;
+	background: url(../images/bg_kiri.png) no-repeat;
+	position: absolute;
+	bottom: -100px;
+	left:-200px;
+	z-index: 1;
+}

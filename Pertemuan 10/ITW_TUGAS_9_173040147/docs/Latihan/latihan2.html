@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>latihan2</title>
+</head>
+<body>
+	<h1>Pilih Link</h1>
+	<form>
+		<select name="mylink" id="mylink" onchange="pilihlink()">
+			<option value=''>pilih Link</option>
+			<option value="http://google.com">Google.com</option>
+			<option value="http://teknik.unpas.ac.id">Website Teknik Unpas</option>
+			<option value="http://facebook.com">facebook</option>
+			<option value="http://youtube.com">Youtube</option>
+			<option value="http://itw.if-unpas.org">ITW</option>
+		</select>
+	</form>
+	<script>
+	function pilihlink(){
+		var linkterpilih=document.getElementById('mylink').value;
+		if(linkterpilih==""){
+			alert("Pilih link!");
+		}else
+		document.location.href = linkterpilih;
+	}
+	</script>
+
+</body>
+</html>

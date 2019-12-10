@@ -1,0 +1,354 @@
+<html>
+	<head>
+		<title>Praktikum Internet dan Teknologi Web | Javascript DOM 2</title>
+		<style>
+		body {
+			font-family : verdana;
+		}
+		h3 {
+			color : #3366FF;
+		}
+		font.tugas {
+			color :#ff3300;
+		}
+		
+		font.tugas-ket {
+			color :#ff0000;
+			font-size:18px;
+			}
+		
+		.tugas-ket2 {
+			color:#CC0000;
+			font-size:22px;
+			font-style:italic;
+			font-weight:bold;
+			text-decoration:underline;
+			}
+		.ket {
+			font-size : 10pt;
+		}
+		.code {
+			background:#eeeeee;
+			padding:4px;
+			font-family : "courier new";
+			font-size:11px;
+		}
+		a:link {color:#004789; text-decoration:none;}
+		a:visited {color:#004789; text-decoration:none;}
+		a:hover {color:#0370d6; text-decoration:underline;}
+		a:active {color:#0370d6; text-decoration:none;}
+		</style>
+	</head>
+	<body>
+		<table width="100%" bgcolor="#ffffff" cellpadding="10">
+			<tr>
+				<td align="right" class="ket"><font size="5"><b>Modul 10 Javascript DOM 2</b></font></td>
+			</tr>
+			
+			<tr>
+				<td class="ket">
+					
+					<a name="event"><h3>Event</h3></a>
+					<p>
+						Memungkinkan javascript untuk merespon interaksi dari user terhadap elemen yang ada di  dalam   web
+					</p>
+					<p>Pada pertemuan ini kita akan bahas lebih lanjut penggunaannya, dan juga kita akan bahas event pada JavaScript yang akan kita gunakan untuk mempermudah pekerjaan kita</p>
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td class="ket">
+					<a name="eventHandling"><h3>Event Handling</h3></a>
+					<ul>
+						<li>Fungsi yang  dipanggil ketika sebuah event   terjadi</li>
+						<li>Biasanya ketika ada interaksi dengan elemen HTML</li>
+						<li>Sebuah event harus didaftarkan</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="ket">
+					<a name="daftarEvent"><h3>Mendaftarkan Event</h3></a>
+					<ol>
+						<li><b>Inline</b></li><br>
+						<ul>
+							<li>Inline event memerintahkan javascript untuk mengeksekusi sebuah fungsi, ketika  sebuah  event terjadi akibat dari interaksi user terhadap sebuah elemen HTML</li>
+							<li>Di bagian HTML</li>
+							<img src="images/html.PNG" alt="html"><br>
+							<li>Di bagian JavaScript</li>
+							<img src="images/js.png" alt="JavaScript">
+						</ul><br>
+						<li><b>Fungsi Ekspresi</b></li><br>
+						<ul>
+							<li>Event didaftarkan di dalam script javascript menggunakan fungsi ekspresi tanpa memodifikasi sintaks pada halaman HTML</li>
+							<li>Di bagian HTML</li>
+							<img src="images/html2.png" alt="HTML">
+							<li>Di bagian JavaScript</li>
+							<img src="images/js2.png" alt="javascript">
+						</ul><br>
+						<li><b>addEventListener</b></li><br>
+						<ul>
+							<li>Event didaftarkan di dalam script javascript menggunakan method addEventListener yang ada di  dalam elemen</li>
+							<li>Di bagian HTML</li>
+							<img src="images/html2.png" alt="HTML">
+							<li>Di bagian JavaScript</li>
+							<img src="images/js3.png" alt="javascript">
+						</ul>
+					</ol>
+				</td>
+			</tr>
+			<tr>
+				<td class="ket">
+					<a name="daftar"><h3>Method String.Match()</h3></a><br>
+					<p>Method String.match() diguakan untuk menemukan String menggunakan rumus regular expresion. Hasil akhir method ini adalah array yang berisi data seluruh string ditemukan.</p>
+					<img src="images/daftar.png" alt="Match()"><br><br>
+					<img src="images/daftar1.png" alt="Match()">
+				</td>
+			</tr>
+			<tr>
+				<td class="ket">
+					<a name="latihan"><h3>Latihan 11a</h3></a>
+					<h4>Memanipulasi CSS dari elemen HTML</h4>
+					<p>Mari kita coba buat aplikasi berikut dan perhatikan sourcecodenya.</p>
+					<font class="tugas">L11a&lt;NRP&gt;.html</font>
+					<br>
+					<img src="images/1.png">
+					<br>
+					<br>
+					<font class="tugas">L11a&lt;NRP&gt;.css</font>
+					<br>
+					<img src="images/2.png">
+					<br>
+					<br>
+					<font class="tugas">L11a&lt;NRP&gt;.js</font>
+					<br>
+					<img src="images/3.png">
+					<br>
+					<br>
+					<h4>Hasil</h4>
+					<img src="images/latihan11a.gif">
+					<br>
+					<br>
+					<h4>Penjelasan</h4>
+					<h5>document.getElementById(id)</h5>
+					<img src="images/4.png">
+					<br>
+					<ul>
+						<li>digunakan untuk memilih / mengambil <strong>satu</strong> elemen HTML yang terdapat pada DOM</li>
+						<li>berbeda dengan document.getElementsByTagName(namatag), yang mengambil <strong>seluruh</strong> elemen dengan tag yang dimaksud dan menyimpannya sebagai array</li>
+						<li>jika terdapat lebih dari 1 elemen dengan nama id yang sama, maka hanya elemen pertama saja yang dianggap / terpengaruh, elemen lain diabaikan</li>
+						<li>kenapa harus kita ambil dan simpan ke dalam variabel? karena akan kita manipulasi setelahnya (diubah css-nya / ditambahkan event kepadanya)</li>
+					</ul>
+					<h5>element.addEventListener('event', function(){ // fungsi yang dilakukan // });</h5>
+					<img src="images/5.png">
+					<ul>
+						<li>menambahkan event pada elemen 'tombol1' pada saat elemen tersebut di-'click'</li>
+						<li>event yang diberikan bisa bermacam-macam, berikut beberapa contohnya :
+							<ol>
+								<li>click</li>
+								<li>dblclick</li>
+								<li>mouseover</li>
+								<li>mouseenter</li>
+								<li>mouseout</li>
+								<li>blur</li>
+								<li>focus</li>
+							</ol></li>
+						</ul>
+						<h5>element.style.&lt;namaStyle&gt; = 'value';</h5>
+						<img src="images/6.png">
+						<ul>
+							<li>menambahkan style background-color dan transition pada elemen 'kotak'</li>
+							<li>&lt;namaStyle&gt; diambil berdasarkan property pada CSS menggunakan jenis penulisan camelCase jika property lebih dari 1 kata</li>
+							<li>contoh: <strong>font-family</strong> menjadi <strong>fontFamily</strong></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="ket">
+						<h3>Latihan 11b</h3>
+						<h4>Modifikasi Latihan 11a</h4>
+						<p>save as file-file pada latihan 11a menjadi <font class="tugas">L11b&lt;NRP&gt;</font></p>
+						<p>lalu ubah isi file <strong>HTML</strong> dan <strong>javascript</strong> sehingga hasilnya sebagai berikut:</p>
+						<img src="images/latihan11b.gif">
+						<br>
+						<br>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td class="ket">
+						<a name="menambah"><h3>Latihan 11c</h3></a>
+						<h4>Menambah elemen DOM</h4>
+						<p>Pada latihan kali ini kita akan mencoba untuk menambah elemen HTML yang ada pada DOM. Latihan ini juga sekaligus mengasah pemahaman kalian mengenai pengulangan.</p>
+						<p>Perhatikan sourcecode berikut ini :</p>
+						<font class="tugas">L11c&lt;NRP&gt;.html</font>
+						<br>
+						<img src="images/7.png">
+						<br>
+						<br>
+						<font class="tugas">L11c&lt;NRP&gt;.css</font>
+						<br>
+						<img src="images/8.png">
+						<br>
+						<br>
+						<font class="tugas">L11c&lt;NRP&gt;.js</font>
+						<br>
+						<img src="images/9.png">
+						<br>
+						<br>
+						<h4>Hasil</h4>
+						<img src="images/latihan11c.gif">
+						<br>
+						<br>
+						<h4>Penjelasan</h4>
+						<img src="images/10.png">
+						<br>
+						<br>
+						<img src="images/11.png">
+						<br>
+						<br>
+						<img src="images/12.png">
+						<br>
+						<br>
+						<img src="images/13.png">
+						<br>
+						<br>
+						<img src="images/14.png">
+						<br>
+						<br>
+						<img src="images/15.png">
+						<br>
+						<br>
+						<img src="images/16.png">
+						<br>
+						<br>
+						<img src="images/17.png">
+						<br>
+						<br>
+						<img src="images/18.png">
+						<br>
+						<br>
+						<img src="images/19.png">
+						<br>
+						<br>
+						<img src="images/20.png">
+						<br>
+						<br>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td class="ket">
+						<h4>Modifikasi Latihan 11c</h4>
+						<p>save as file-file pada latihan 11c menjadi <font class="tugas">L11d&lt;NRP&gt;</font></p>
+						<p>lalu ubah isi file <strong>javascript</strong> sehingga hasilnya sebagai berikut:</p>
+						<img src="images/latihan11d.gif">
+						<br>
+						<br>
+						<h4>Petunjuk</h4>
+						<p>kalian hanya perlu mengubah logika pada baris-baris kode berikut:</p>
+						<img src="images/21.png">
+						<br>
+						<br>
+						<p>dan</p>
+						<br>
+						<img src="images/22.png">
+						<br>
+						<br>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td class="ket">
+						<h3>Latihan 11d </h3>
+						<h4>Modifikasi Latihan 11d</h4>
+						<p>hanya untuk yang belum puas dengan 11d</p>
+						<p>save as file-file pada latihan 11d menjadi <font class="tugas">L11d-bonus&lt;NRP&gt;</font></p>
+						<p>lalu ubah isi file <strong>javascript</strong> sehingga hasilnya sebagai berikut:</p>
+						<img src="images/latihan11d-bonus.gif">
+						<br>
+						<br>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td class="ket">
+						<a name="menghapus"><h3>Latihan 11e</h3></a>
+						<h4>Menghilangkan elemen HTML</h4>
+						<p>Pada latihan kali ini kita akan mencoba untuk menghilangkan elemen HTML yang ada pada DOM.</p>
+						<p>Aplikasi ini menyerupai image gallery, yang ketika kalian hover salah satu gambar pada gallerynya akan muncul tombol hapus untuk menghapus gambarnya.</p>
+						<p>download file berikut, lalu save as sesuai dengan perintahnya</p>
+						<a href="images/l11e-html.txt" target="_blank"><strong>&gt;&gt;&gt; file HMTL &lt;&lt;&lt;</strong></a>
+						<br>
+						<p>save as menjadi <font class="tugas">L11e&lt;NRP&gt;.html</font></p>
+						<a href="images/l11e-css.txt" target="_blank"><strong>&gt;&gt;&gt; file CSS &lt;&lt;&lt;</strong></a>
+						<br>
+						<p>save as menjadi <font class="tugas">L11e&lt;NRP&gt;.css</font></p>
+						
+						<p>salin source code javascript berikut, lalu save as dengan nama <font class="tugas">L11e&lt;NRP&gt;.js</font></p>
+						<img src="images/23.png">
+						<br>
+						<br>
+						<p>jangan lupa untuk menghubungkan ke-tiga file tersebut.</p>
+						<h4>Hasil</h4>
+						<img src="images/latihan11e.gif">
+						<br>
+						<br>
+						<h4>Penjelasan</h4>
+						<img src="images/24.png">
+						<br>
+						<br>
+						<img src="images/25.png">
+						<br>
+						<br>
+						<img src="images/26.png">
+						<br>
+						<br>
+						<img src="images/27.png">
+						<br>
+						<br>
+						<img src="images/28.png">
+						<br>
+						<br>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td class="ket">
+						<a name="tugas"><h3>Tugas 1</h3></a>
+						<h4>Membuat Validasi Form</h4>
+						<p>Download file ini terlebih dahulu : <a href="images/register.rar">file register</a></p>
+						<p>Pada tugas kali ini kita akan mencoba membuat sebuah validasi form menggunakan javascript dan html.</p>
+						<p>Syaratnya sebagai berikut : </p>
+						<ul>
+							<li>semua kolom tidak boleh kosong</li>
+							<li>kolom nrp hanya boleh diisi angka max 9 angka</li>
+							<li>nama tidak boleh angka</li>
+							<li>jurusan menggunakan combobox</li>
+							<li>jurusan tidak bisa dipilih jika tidak memasukan nrp</li>
+							<li>jurusan menyesuaikan dengan nrp contoh : jika dimasukan nrp kode jurusan 304 maka jurusan yang harus muncul adalah Teknik Informatika.</li>
+							<p>Gunakan file latihan login yang pernah dibuat, ubah bagian formnya menjadi sebagai berikut : </p><br>
+							<img src="images/contoh.png" alt="" width="800px"><br>
+							<p>Hasilnya : </p><br>
+							<li>Jika kolom tidak diisi</li><br>
+							<img src="images/kosong.png" alt=""><br><br>
+							<li>Jika inputan tidak sesuai format</li><br>
+							<img src="images/salah.png" alt=""><br><br>
+							<li>Jika inputan benar maka tidak ada pesan muncul dan combobox otomatis terisi sesuai kode jurusan yang diisikan di nrp</li><br>
+							<img src="images/benar.gif" alt="">
+						</ul>
+						<br>
+						<p>petunjuk : </p>
+						<p>gunakan method String.match() dan event onkeyup yang ada di javascript silahkan kalian explore sendiri cara penggunaannya.</p><br>
+						<p>save file dengan nama <font class="tugas">T10&lt;NRP&gt;.html</font></p>
+					</td>
+				</tr>
+				
+			</table>
+			<font color="#0066CC" size="+1">Setiap latihan dimasukkan ke dalam folder tugas11&lt;NRP&gt;, lalu zip dengan nama yang sama dan menjadi tugas. <br>
+			</font><br>
+			<br>
+			<br>
+			<br>
+		</body>
+	</html>

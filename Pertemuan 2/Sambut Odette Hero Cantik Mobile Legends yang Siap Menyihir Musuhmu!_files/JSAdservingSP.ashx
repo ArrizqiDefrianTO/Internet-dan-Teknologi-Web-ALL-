@@ -1,0 +1,3 @@
+Admeta.init('https://p400.atemda.com/scrollintoview.ashx',0,1507194006855);
+Admeta.unsold('100318533:1:d4a0a8','%3Cscript%20type%3D%27text/javascript%27%3E%0Agpb_1127867.passBack%28%29%3B%0A%3C/script%3E',1,undefined,undefined,0,'',300,250);Admeta.noAdAvailable('100318533:1:d4a0a8',1,0,'',300,250);Admeta.Script.loaded();
+Admeta.loadScript(unescape('https%3A//pixel.yabidos.com/fltiu.js%3Fqid%3D836373f5137373f5131353%26cid%3D511%26p%3D400%26s%3Dhttps%253a%252f%252fwww.duniaku.net%252f2017%252f09%252f29%252fodette-hero-cantik-mobile-legends%252f%26x%3Dadmeta%26nci%3D%26adtg%3D988164%26nai%3D%26ai%3D'),0,0,0);

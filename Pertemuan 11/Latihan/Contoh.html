@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0; 
+		}
+		#kotak {
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			margin:  20px;
+		}
+		.sembunyi {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<button class="btn btn-default" type="button" id="tampil">Tampilan</button>
+
+	<div id="kotak"></div>
+	
+
+
+	<script src="jquery.slim.min.js">
+		$(document).ready(function(){
+		$("#kotak").addClass("sembunyi");
+
+		$("#tampil").click(function(){
+			$("#kotak").slideToggle(500);
+		});
+	});
+	</script>
+</body>
+</html>

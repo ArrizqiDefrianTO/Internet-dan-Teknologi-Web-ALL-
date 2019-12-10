@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan_8e_173040158</title>
+</head>
+<body>
+	<script>
+		var inputan = prompt("Masukan Nilai :");
+		var s = '';
+		for (var r=1; r <= inputan; r++){
+			for(var a=inputan; a >= 1; a--){
+				if(a >= r){
+					s = s + "+";
+				}else{
+					s = s + "#";
+				}
+			}
+			s = s + '\n';
+		}
+		alert(s);
+	</script>
+	<a href="../index.html">Back To Index</a>
+</body>
+</html>

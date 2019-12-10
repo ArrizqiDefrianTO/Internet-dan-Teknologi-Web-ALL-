@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#kotak {
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			position: relative;
+			top: 20px;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<button type="buttom" id="tombol1">Ubah warna</button>
+
+	<div id="kotak"></div>
+	<!-- script -->
+
+	<script type="text/javascript">
+		// tombol 1
+		var tombol1= document.getElementById('tombol1');
+		var kotak= document.getElementById('kotak');
+ 
+		tombol1.addEventListener('click', function() {
+			kotak.style.backgroundColor = '#bada55';
+			kotak.style.transition = '1s';
+		});
+	</script>
+
+<center><a href="../../index.html">Back To Index</a></center>
+</body>
+</html>

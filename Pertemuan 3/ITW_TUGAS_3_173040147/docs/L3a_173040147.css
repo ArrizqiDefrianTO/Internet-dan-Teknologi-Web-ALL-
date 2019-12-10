@@ -1,0 +1,18 @@
+body{
+	background-color: aqua;
+	font-family: "centurygothic";
+}
+h1{
+	font-family: "comicsansms";
+	color: darkblue;
+	text-align: center;
+}
+h4{
+	text-align: right;
+	font-style: italic;
+	font-size: 110%;
+}
+p{
+	text-align: justify;
+	text-indent: 5%;
+}

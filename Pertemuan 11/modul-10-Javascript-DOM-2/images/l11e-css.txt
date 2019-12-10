@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h2 { 
+	margin: 20px;
+	text-align: center;
+	font-family: arial;
+}
+
+#container {
+	width: 360px;
+	margin: 20px auto;
+}
+
+.gambar {
+	width: 80px;
+	height: 80px;
+	background-color: salmon;
+	font-size: 30px;
+	font-family: arial;
+	color: white;
+	text-align: center;
+	line-height: 80px;
+	position: relative;
+	float: left;
+	margin: 5px;
+}
+
+.gambar span {
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	font-family: arial;
+	font-size: 11px;
+	color: white;
+	border-radius: 50%;
+	position: absolute;
+	line-height: 15px;
+	opacity: .7;
+	top: 3px;
+	right: 3px;
+	cursor: pointer;
+	display: none;
+}
+
+.gambar:hover span {
+	display: block;
+}

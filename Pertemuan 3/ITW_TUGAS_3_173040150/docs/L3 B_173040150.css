@@ -1,0 +1,31 @@
+body{
+	background-color: aqua;
+}
+
+h1{
+	font-family: "comicsansms";
+	color: darkblue;
+	text-align: center;
+}
+
+h4{
+	text-align: right;
+	font-family: arial;
+	font-style: italic;
+}
+h3{
+	font-variant: normal;
+}
+
+p{
+	font-family: verdana;
+	text-indent: 50px;
+}
+.p1{
+	color: red;
+	text-align: center;
+}
+#p2{
+	text-align: center;
+	color: darkred;
+}

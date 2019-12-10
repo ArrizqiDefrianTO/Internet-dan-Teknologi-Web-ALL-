@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+</head>
+<body>
+	<h3>Masukan Tulisan</h3>
+	<input type="text" id="tulisan">
+	<input type="button" name="submit" value="cek" onclick="cekTulisan()">
+
+<script>
+	function cekTulisan(){
+		var tulisanKu=document.getElementById('tulisan').value;
+		if(tulisanKu=""){
+			alert("Anda tidak memasukan nama!");
+		}else{
+		alert("Teks yang dimasukkan adalah: " + tulisanKu);
+		}
+	}
+	
+</script>
+</body>
+</html>

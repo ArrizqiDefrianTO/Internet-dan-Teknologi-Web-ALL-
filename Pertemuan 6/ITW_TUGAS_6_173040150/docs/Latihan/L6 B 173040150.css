@@ -1,0 +1,62 @@
+body {
+	background-color: black;
+}
+.login {
+	width: 280px;
+	height: 280px;
+	background-color: lightblue;
+	margin: 0 auto;
+	position: relative;
+	border:10px solid white;
+	border-bottom: 20px solid white;
+	top: 180px;
+}
+.ghost {
+	width: 200px;
+	padding: 8px;
+	color: #fff;
+	border: 1px solid #fff;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: black;
+	cursor: hand;
+}
+.center {
+	margin: 0 auto;
+	width: 200px;
+}
+.user {
+	width: 120px;
+	margin: 0 auto;
+
+}
+.user img {
+	width: 100px;
+	position: relative;
+	top: -40px;
+	
+
+}
+.btn {
+	width: 120px;
+	padding: 8px;
+	color: black;
+	border: 1px solid #fff;
+	text-align: ;
+	font-size: 15px;
+}
+.xbtn {
+	margin-top: 10px;
+}
+.xbtn img {
+	position: relative;
+	top: -10px;
+	left: 255px;
+}
+.login .xbtn img {
+	width: 30px;
+	border-radius: 100px;
+	border: 1px solid black;
+
+}

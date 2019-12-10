@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		var pilihanUser = prompt("Apakah kamu pilih gajah, orang, atau semut?");
+		var pilihanComputer = Math.random();
+
+		if (pilihanComputer < 0.34) {
+			pilihanComputer = "gajah";
+		} else if(pilihanComputer <= 0.67) {
+			pilihanComputer ="orang";
+		} else {
+			pilihanComputer = "semut";
+		}
+
+		if (pilihanUser == "gajah" && pilihanComputer == "gajah")
+
+		alert("Jadi Siah");
+
+	</script>
+</head>
+<body>
+</body>
+</html>

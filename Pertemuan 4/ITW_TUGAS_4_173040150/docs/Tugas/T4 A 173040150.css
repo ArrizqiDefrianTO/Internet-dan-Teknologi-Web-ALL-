@@ -1,0 +1,55 @@
+		.container{
+			border:10px solid lightblue;
+			width:1100px;
+			margin:auto;
+			margin-top:50px;
+		}
+		.header{
+			width:auto;
+			color:lightblue;
+			text-align:center;
+			height:70px;
+			width:-23px;
+			line-height:10px;
+			padding-top:10px;
+			padding-bottom:10px;
+
+		}
+		body{
+			background-size:100% 100%;
+		}
+		h3{
+			padding-top:5px;
+			padding-left:20px;
+			color:red;
+			text-align:center;
+		}
+		p{
+			padding:8px;
+			text-indent:20px;
+			text-align:justify;
+			color:white;
+		}
+		#p1{
+			padding-top:0px;
+		}
+		.image{
+			margin:0px auto 0px;
+			width:200px;
+			height:200px;
+		}
+		img{
+			width:200px;
+			height:150px;
+			padding-top:20px;
+		}
+		.footer{
+			height:40px;
+			
+			color:white;
+		}
+		#pfooter{
+			font-weight:auto;
+			color:white;
+			text-align:center;
+		}

@@ -1,0 +1,225 @@
+<html>
+	<head>
+		<title>Praktikum Internet &amp; Teknologi Web | CSS Float</title>
+		<style>
+		body {
+			font-family : verdana;
+		}
+		h3 {
+			color : #3366FF;
+		}
+		font.tugas {
+			color :#ff3300;
+		}
+		
+		font.tugas-ket {
+			color :#ff0000;
+			font-size:18px;
+			}
+		
+		.tugas-ket2 {
+			color:#CC0000;
+			font-size:22px;
+			font-style:italic;
+			font-weight:bold;
+			text-decoration:underline;
+			}
+		.ket {
+			font-size : 10pt;
+		}
+		.code {
+			background:#eeeeee;
+			padding:4px;
+			font-family : "courier new";
+			font-size:11px;
+		}
+		a:link {color:#004789; text-decoration:none;}
+		a:visited {color:#004789; text-decoration:none;}
+		a:hover {color:#0370d6; text-decoration:underline;}
+		a:active {color:#0370d6; text-decoration:none;}
+		</style>
+	</head>
+	<body>
+		<table width="100%" bgcolor="#ffffff" cellpadding="10">
+			<tr>
+				<td align="right" class="ket"><font size="5"><b>Modul 4 CSS Float</b></font></td>
+			</tr>
+			<tr>
+				<td class="ket">
+					<a name="sejarahfloat"><h3>Sejarah Float</h3></a>
+					<p>
+						Dulunya, ketika para developers pertama kali melakukan transisi dari HTML layout berbasis tabel ke layout tanpa tabel, salah satu CSS property yang memberikan peran yang sangat penting, css property itu adalah <strong>float</strong>.
+					</p>
+					<p>
+						Untuk materi kali ini, kita akan membahas apa itu <strong>Float</strong> dan <strong>bagaimana float ini memberikan efek terhadap elemen.</strong>
+					</p>
+					<hr>
+					<p>
+						Agar lebih memahami bagaimana float digunakan, silahkan amati gambar dibawah ini.
+						<img src="images/print-layout.png"><br>
+					</p>
+					
+					
+					<p>Pada print design, gambar pada halaman di-set sedemikian rupa sehingga teks/tulisan berada rapih disekitar gambar tersebut.</p>
+					<p>Pada web design, elemen halaman yang diberi properti CSS float berprilaku sama seperti gambar pada print design diatas.</p>
+					<img src="images/web-layout.png"><br>
+					<h4>Tujuan CSS Float</h4>
+					<ul>
+						<li>Berfungsi untuk memaksa sebuah elemen menjadi berada di kiri atau dikanan halaman.
+							<li>Elemen yang berada setelah elemen yang diberi float akan terpengaruh fungsi float tersebut.
+								<li>Elemen yang berada sebelum elemen yang diberi float tidak akan terpengaruh.
+									<li>Property:<br>
+										<img src="images/10.jpg"><br>
+										<li>Untuk me-nonaktifkan fungsi float gunakan:<br>
+											<img src="images/11.jpg"><br>
+										</ul>
+										<h4>Contoh Float Left</h4>
+										<img src="images/float-left.png"><br>
+										<h4>Contoh Float Right</h4>
+										<img src="images/float-right.png"><br>
+										<h4>CSS Float sebagai Struktur Halaman</h4>
+										<p>Selain contoh-contoh diatas, float juga dapat digunakan untuk membuat struktur halaman seperti gambar dibawah ini:</p>
+										<img src="images/web-structure.png"><br>
+									</a>
+									<h4>Menghilangkan Float</h4>
+									<p>untuk menghilangkan fungsi float pada halaman, gunakan property clear. Sebuah elemen yang diberi property clear tidak akan pindah posisi untuk mengisi kekosongan pada elemen diatasnya. Ilustrasinya dapat dilihat pada gambar dibawah ini:</p>
+									<img src="images/uncleared-footer.png"><br>
+									<p>Gambar diatas menunjukkan bahwa ukuran dari sidebar lebih kecil daripada lebar main content. Elemen footer dibawahnya melihat masih ada ruang kosong dibawah sidebar yang bisa ditempati, sehingga ruang kosong tersebut diisi oleh footer. Untuk memperbaiki masalah ini, digunakan sintaks berikut:</p>
+									<img src="images/clear-float.png"><br>
+									<p>sehingga hasilnya seperti gambar dibawah ini:</p>
+									<img src="images/cleared-footer.png"><br>
+								</td>
+							</tr>
+							<tr>
+								<td class="tugas-ket2"> <br><br><a name="latihanfloat">Latihan 4a</a></td>
+							</tr>
+							<tr>
+								<td class="ket">
+									<a name="center">
+										<h3>buka file .txt dibawah ini, lalu copy kan isinya dan simpan dengan nama:</h3>
+										<font class="tugas">L4a&lt;NRP&gt;.html</font><br>
+										<a href="images/latihan5a.txt" target="_blank">
+											<h4>&gt;&gt; download file latihan 4a &lt;</h4>
+										</a>
+										<h3>Buatlah file css untuk menghias file html tadi dengan spesifikasi dibawah ini, simpan dengan nama:</h3>
+										<font class="tugas">L4a&lt;NRP&gt;.css</font><br><br>
+										<h4>body</h4>
+										<ul>
+											<li>jenis font : georgia</li>
+											<li>warna background: #999</li>
+										</ul>
+										<h4>p</h4>
+										<ul>
+											<li>margin atas: 0px</li>
+											<li>margin bawah: ?</li>
+											<li>margin kanan: 0px</li>
+											<li>margin kiri: ?</li>
+										</ul>
+										<h4>id page-wrap</h4>
+										<ul>
+											<li>lebar : 700px</li>
+											<li>margin atas bawah : 0px</li>
+											<li>margin kiri kanan : auto</li>
+											<li>padding untuk ke-empat sisinya : ?</li>
+										</ul>
+										<h4>id content</h4>
+										<ul>
+											<li>width : 460px</li>
+											<li>margin kanan : 20px</li>
+											<li>padding kanan : 20px</li>
+											<li>tebal border kanan : 1px</li>
+											<li>tipe border kanan : solid</li>
+											<li>warna border kanan : #333</li>
+											<li>tinggi minimal : ?</li>
+										</ul>
+										<h4>id sidebar</h4>
+										<ul>
+											<li>lebar : 180px</li>
+										</ul>
+										<h4>id footer</h4>
+										<ul>
+											<li>tipe paragraf : rata tengah</li>
+											<li>warna background: #333</li>
+											<li>jenis huruf : verdana</li>
+											<li>warna huruf : putih</li>
+											<li>lebar : 740px</li>
+											<li>tinggi : 40px</li>
+											<li>margin atas bawah : ?</li>
+											<li>margin kiri kanan : auto</li>
+											<li>padding atas : 20px</li>
+										</ul>
+										<h3>sehingga hasilnya <a href="images/latihan5a.png" target="_blank">seperti ini</a>.</h3>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="tugas-ket2"> <br><br><a name="latihanfloat">Latihan 4b</a></td>
+							</tr>
+							<tr>
+								<td class="ket">
+									<a name="center">
+										<h3>modifikasi file html dan css pada latihan 4a, simpan dengan nama :</h3>
+										<font class="tugas">L4b&lt;NRP&gt;.html</font><br>
+										<font class="tugas">L4b&lt;NRP&gt;.css</font>
+										<h3>modifikasi file css dengan spesifikasi dibawah ini:</h3><br>
+										<ul>
+											<li>tambahkan atribut/properti float dengan value left untuk id content dan id sidebar</li>
+											<li>buat kelas baru dengan nama clear dan isi atribut/propertinya dengan clear dan value both</li>
+										</ul>
+										<h3>sehingga hasilnya <a href="images/latihan5b.png" target="_blank">seperti ini</a>.</h3>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="tugas-ket2"> <br><br><a name="latihanfloat">Latihan 4c</a></td>
+							</tr>
+							<tr>
+								<td class="ket">
+									<a name="center">
+										<h3>modifikasi file html dan css pada latihan 4b, simpan dengan nama :</h3>
+										<font class="tugas">L4c&lt;NRP&gt;.html</font><br>
+										<font class="tugas">L4c&lt;NRP&gt;.css</font>
+										<h3>modifikasi file css / html dengan spesifikasi dibawah ini:</h3><br>
+										<h4>Tambahkan kelas kotak pada file css dengan spesifikasi sebagai berikut:</h4>
+										<ul>
+											<li>lebar : 80px</li>
+											<li>tinggi : 100px</li>
+											<li>margin atas : ?</li>
+											<li>margin kanan : 10px</li>
+											<li>margin bawah : ?</li>
+											<li>margin kiri : 0px</li>
+											<li>float : ?</li>
+										</ul>
+										<h4>tambahkan gambar untuk tiap-tiap div dengan kelas kotak, gambar dapat diambil di folder images/gallery pada modul.</h4>
+										<h4>Tambahkan pula div baru dengan nama kelas clear pada file html, simpan dibawah div dengan kelas kotak.</h4>
+										<h3>sehingga hasilnya <a href="images/latihan5c.png" target="_blank">seperti ini</a>.</h3>
+									</a>
+								</td>
+							</tr>
+						</table>
+						<br><hr>
+						<table width="100%" bgcolor="#ffffff" cellpadding="10">
+								<tr>
+									<td class="tugas-ket2"> <br><br><a name="tugas">Tugas untuk dikerjakan dirumah</a></td>
+								</tr>
+								<tr><td>Buatlah halaman web seperti yang ada ditutorial. Gunakan artikel untuk melengkapi data yang ada dihalaman website, sertakan sumber dari atikel tersebut dan hias website semenarik mungkin.</td></tr>
+								
+								
+							</table>
+							<font color="#0066CC">Setiap latihan dan tugas dimasukkan ke dalam folder tugas4&lt;NRP&gt;, lalu zip sesuai dengan nama yang sudah disepakati . Hasil dari latihan minimal sama dengan hasil yang dicontohkan!<br>
+							Buatlah sebuah halaman index untuk tugas 4 (seperti yang telah dibuat untuk tugas-tugas sebelumnya)<br>
+							Kumpulkan tugas4 pada hari yang telah disepakati dengan asisten masing-masing
+							</font>
+							<br><br>
+							<br><br>							
+							<br><br><hr>
+							<div>
+								<a name="link"><h4>Tutorial :</h4></a>
+								<p>Video bisa dilihat disini :</p><br>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/cis0O2GgUVI?list=PLFIM0718LjIUu4Ju9GUL5zpLcuq08TKYr" frameborder="0" allowfullscreen></iframe>
+								<p>Link materi terkait bisa dilihat <a href="https://http://w3schools.com/">disini</a></p>
+							</div>
+							<br>
+							<br>
+						</body>
+					</html>

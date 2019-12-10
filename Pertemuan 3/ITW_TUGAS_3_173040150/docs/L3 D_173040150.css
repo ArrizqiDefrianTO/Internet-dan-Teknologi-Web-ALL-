@@ -1,0 +1,46 @@
+body{
+	background-image: url(../images/background.png);
+	background-repeat: repeat-x;
+	font-family: "centurygothic";
+	background-color: white;
+}
+
+h1{
+	font-family: "comicsansms";
+	color: darkblue;
+	text-align: center;
+	font-size: 60px;
+}
+
+h4{
+	text-align: center;
+	font-family: arial;
+	font-style: italic;
+}
+
+h3{
+	font-variant: normal;
+	text-align: center;
+}
+
+p{
+	font-family: verdana;
+	text-indent: 50px;
+}
+.p1{
+	color: darkred;
+	text-align: center;
+}
+#p2{
+	line-height: 100px;
+	color: darkred;
+}
+.hai:link{
+	font-style: bold;
+	text-decoration: none;
+	color: blue;
+}
+.hai:hover{
+	text-decoration: underline;
+	color: red;
+}

@@ -1,0 +1,184 @@
+body{
+	background-color: darkgrey;
+}
+.page-wrap{
+	width: 1100px;
+	height: auto;
+	background-color: #fff;
+	margin: 80px auto;
+	box-shadow: 10px 10px 10px #333;
+	padding-right: 10px;
+}
+.header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	background-color: black;
+	z-index: 9999;
+}
+.header h1{
+	color: white;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.header a{
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+}
+.right{
+	float: right;
+	margin-top: -55px;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+.right a{
+	margin-right: 8px;
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+
+}
+
+#sidebar{
+	width: 200px;
+	float: left;
+	clear: both;
+	position: absolute;
+	margin-top: 40px;
+	padding-left: 15px;
+	
+}
+
+.menu{
+	background-color: grey;
+	height: 30px;
+	width: 150px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+.produk{
+	background-color: grey;
+	height: 30px;
+	width: 150px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+.bran{
+	background-color: grey;
+	height: 30px;
+	width: 150px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+
+}
+.faqs{
+	background-color: grey;
+	height: 30px;
+	width: 150px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+
+}
+.menu a{
+	text-decoration: none;
+	color: white;
+}
+.produk a{
+
+	text-decoration: none;
+	color: white;
+}
+.bran a{
+
+	text-decoration: none;
+	color: white;
+}
+.faqs a{
+
+	text-decoration: none;
+	color: white;
+}
+.menu:hover{
+	background-color: black;
+}
+.produk:hover{
+	background-color: black;
+}
+.bran:hover{
+	background-color: black;
+}
+.faqs:hover{
+	background-color: black;
+}
+.content{
+	width: 900px;
+	padding: 20px;
+	float: right;
+	background-color: white;
+}
+.content img{
+	width: 150px;
+	height: 150px;
+	filter: grayscale(50%);
+	margin-left: 25px;
+	margin-right: 10px;
+	-o-filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+}
+img{
+	margin-top: 20px;
+}
+.content img:hover{
+	filter: none;
+	}
+.gambar{
+	position: relative;
+	float: left;
+	width: 200px;
+	border: 1px solid white;
+	box-shadow: 1px 1px 10px grey;
+	margin-right: 20px;
+	height: 220px;
+}
+.gambar p{
+	text-align: center;
+	line-height: 14px;
+}
+.content h1{
+	font-family: "Corbel";
+}
+.show{
+	width: 100px;
+	height: 35px;
+	background-color: grey;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 250px;
+	margin-left: 820px;
+}
+.show a{
+	text-decoration: none;
+	color: white;
+}
+.footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+.clear{
+	clear: both;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan_8c_173040158</title>
+</head>
+<body>
+	<script>
+		var pilihanUser = prompt("Apakah kamu pilih gajah, orang, atau semut?");
+		var pilihanComputer = Math.random();
+		if (pilihanComputer < 0.34){
+			pilihanComputer = "gajah";
+		}else if(pilihanComputer <= 0.67){
+			pilihanComputer = "orang";
+		}else{
+			pilihanComputer = "semut";
+		}
+
+		if((pilihanUser == "gajah") && (pilihanComputer == "gajah")){
+			alert("Komputer memilih="+" "+pilihanComputer+"."+" "+ "Hasilnya adalah Seri");
+		}else if((pilihanUser == "gajah") && (pilihanComputer == "orang")){
+			alert("Komputer memilih="+" "+pilihanComputer+"."+" "+ "Hasilnya adalah kamu Menang");
+		}else if((pilihanUser == "gajah") && (pilihanComputer == "semut")){
+			alert("Komputer memilih="+" "+pilihanComputer+"."+" "+ "Hasilnya adalah kamu Kalah");
+		}else if((pilihanUser == "orang") && (pilihanComputer == "orang")){
+			alert("Komputer memilih="+" "+pilihanComputer+"."+" "+ "Hasilnya adalah Seri");
+		}else if((pilihanUser == "orang") && (pilihanComputer == "semut")){
+			alert("Komputer memilih="+" "+pilihanComputer+"."+" "+ "Hasilnya adalah kamu Kalah");
+		}else if((pilihanUser == "orang") && (pilihanComputer == "gajah")){
+			alert("Komputer memilih="+" "+pilihanComputer+"."+" "+ "Hasilnya adalah kamu Menang");
+		}else if((pilihanUser == "semut") && (pilihanComputer == "semut")){
+			alert("Komputer memilih="+" "+pilihanComputer+"."+" "+ "Hasilnya adalah Seri");
+		}else if((pilihanUser == "semut") && (pilihanComputer == "orang")){
+			alert("Komputer memilih="+" "+pilihanComputer+"."+" "+ "Hasilnya adalah kamu Kalah");
+		}else if((pilihanUser == "semut") && (pilihanComputer == "gajah")){
+			alert("Komputer memilih="+" "+pilihanComputer+"."+" "+ "Hasilnya adalah kamu Menang");
+		}
+		else {
+			alert("Masukan input yang benar");
+		}
+
+
+	</script>
+
+	<a href="../index.html">Back To Index</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan 3</title>
+</head>
+<body>
+	<h3>Jawab pertanyaan berikut ini:</h3>
+	<p>Apa kepanjangan dari HTML ?</p>
+	<p>Jawaban : </p>
+	<a href="#" onclick="pilihAksi('tampilkan','jawaban');return false;">Tampilkan</a> 
+	<a href="#" onclick="pilihAksi('sembunyikan','jawaban');return false;">Sembunyikan</a>
+	<p id="jawaban" style="display: none;">Hypertext Markup Languages</p>
+	<script>
+	function pilihAksi(aksi, id){
+		if(aksi=="tampilkan"){
+			document.getElementById('jawaban').style.display="block";	
+		}else{
+		document.getElementById('jawaban').style.display="none";
+	}
+}
+	</script>	
+
+</body>
+</html>

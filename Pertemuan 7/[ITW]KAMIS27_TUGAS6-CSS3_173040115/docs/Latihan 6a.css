@@ -1,0 +1,33 @@
+.kotak{
+	width: 100px;
+	height: 100px;
+	background-color: #000033;
+	line-height:90px;
+	text-align: center;
+	color: white;
+	font-family: arial;
+	font-size: 20px;
+	position: fixed;
+	top:0px;
+	left:0px;
+	transition: all 2s ease;
+	-webkit- -ms- -moz- -o-
+}
+
+.kotak:hover{
+	width: 350px;
+	height: 350px;
+	background-color: pink;
+	line-height: 300px;
+	font-size: 50px;
+	left: 900px;
+	top: 300px;
+	border-radius: 2000px;
+	-webkit-box-shadow: 0 0 60px rgba(0,0,0,1);
+	-o-box-shadow: 0 0 60px rgba(0,0,0,1);
+	-moz-box-shadow: 0 0 60px rgba(0,0,0,1);
+	-ms-box-shadow: 0 0 60px rgba(0,0,0,1);
+	transform: rotate(360deg);
+	-webkit- -ms- -moz- -o-
+
+}

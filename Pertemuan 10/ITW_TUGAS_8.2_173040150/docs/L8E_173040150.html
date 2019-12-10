@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 8E 173040150</title>
+</head>
+<body>
+	<script>
+		var inputan = prompt("Masukan Nilai :");
+		var s = '';
+		for (var r=1; r <= inputan; r++){
+			for(var a=inputan; a >= 1; a--){
+				if(a >= r){
+					s = s + "+";
+				}else{
+					s = s + "#";
+				}
+			}
+			s = s + '\n';
+		}
+		alert(s);
+	</script>
+	<center><a href="../index.html">Back To Index</a></center>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>latihan4</title>
+</head>
+<body>
+	<p>Teks yang anda masukkan : <b id="teksLama"> teks lama</b></p>
+	<p>masukan teks baru : </p>
+	<input type="text" id="userInput" placeholder="masukan teks.."><br>
+	<input type="button" onclick="ubahTeks()" value="ubah teks">
+
+<script>
+function ubahTeks() {
+	var userInput= document.getElementById('userInput').value;
+	var teksBaru="<span style='color: red'>" + userInput + "</span>";
+	document.getElementById('teksLama').innerHTML= teksBaru;
+}
+</script>
+</body>
+</html>

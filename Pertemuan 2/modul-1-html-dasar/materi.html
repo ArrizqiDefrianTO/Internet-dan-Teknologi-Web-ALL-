@@ -1,0 +1,318 @@
+
+<html>
+<head>
+	<title>Praktikum Internet &amp; Teknologi Web | HTML Dasar</title>
+	<style>
+	body {
+		font-family : verdana;
+	}
+	h3 {
+		color : #4682b4;
+	}
+	
+	font.tugas {
+		color :#ff0000;
+	}
+	
+	font.tugas-ket {
+		color :#ff0000;
+		font-size:18px;
+	}
+	
+	.ket {
+		font-size : 10pt;
+	}
+	a:link {color:#3366CC; text-decoration:none;}
+	a:visited {color:#3366CC; text-decoration:none;}
+	a:hover {color:#0099FF; text-decoration:underline;}
+	a:active {color:#3366CC; text-decoration:none;}
+	</style>
+</head>
+<body bgcolor="#FFF999">
+	<center>
+	<table width="100%" bgcolor="#ffffff" cellpadding="10">
+		<tr>
+		<td align="right" class="ket"><font size="5"><b>Modul 1 - HTML Dasar</b></td>
+		</tr>
+		<tr>
+		<td class="ket">
+			<a name="html">&nbsp;</a>
+			<h3>What is HTML???</h3>			
+			<p>HTML adalah sebuah bahasa yang dipergunakan untuk mendeskripsikan halaman web.
+			<ul>
+				<li>HTML adalah singkatan dari Hyper Text Markup Language
+				<li>HTML is not a programming language, it is a markup language
+			    <li>Markup language adalah kumpulan dari tag tertentu
+			    <li>HTML menggunakan <strong>tag</strong> untuk menggambarkan web page
+			</ul>
+			</p>
+			
+			<h5>HTML Tags</h5>
+			<img src="images/quote.jpg"><br>
+			
+			<p>HTML markup tags biasa disebut dengan tags
+			<ul>
+			    <li>HTML tag adalah keyword yang diawali dan diakhiri dengan tanda kurung "<" dan ">"
+			    <li>HTML tag biasanya berpasangan
+			    <li>Tag pertama adalah start tag, tag kedua adalah end tag
+			    <li>Tag tersebut disebut juga opening tags dan closing tags
+			</ul>
+			</p>
+			
+			<p>HTML Documents = Web Pages
+			<ul>
+				<li>HTML documents menggambarkan halaman web
+			    <li>HTML documents terdiri dari HTML tags dan plain text
+			    <li>HTML documents disebut juga web page
+			</ul>
+			
+			HTML document dibaca dengan menggunakan web browser, seperti like Internet Explorer atau Firefox, dan kemudian ditampilkan sebagai web page. Browser tersebut tidak menampilkan HTML tags, tapi tag tersebut diterjemahkan menjadi isi dari page.
+			
+			</p>		
+
+			<p>Untuk belajar lebih dalam lagi kalian bisa belajar link berikut ini : </p>
+			<ol type="1">
+				<li><a href="https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F" target="blank">HTML Dasar</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLFIM0718LjIWE-Ot9V9qcALx5OMAZY67c" target="blank">Tutorial Sublime Text</a></li>
+				<li><a href="https://www.w3schools.com/html/" target="blank">W3Schools</a></li>
+				<li><a href="https://www.codepolitan.com/interactive-coding/html" target="blank">CodePolitan</a></li>
+			</ol>
+		</td>
+		</tr>
+		<tr>
+		<td class="ket">
+			<a name="dasar">
+			<h3>Format Dasar File Dokumen HTML</h3>
+			berikut adalah format dasar dari HTML<br>
+            <br><br><font class="tugas">L1a&lt;NRP&gt;.html</font><br><br>
+			<img src="images/g1.jpg">
+			</a>
+
+		</td>
+		</tr>
+		<tr>
+		<td class="ket">
+			<a name="heading">
+			<h3>Heading</h3> 
+			Pada dokumen HTML terdapat 6 ukuran heading mulai dari H1 sampai dengan H6
+			H1 adalah heading dengan ukuran terbesar dan H6 adalah heading dengan ukuran terkecil
+			<br><br><font class="tugas">L1b&lt;NRP&gt;.html</font><br><br>
+			<img src="images/g3.jpg">
+			</a>
+		</td>
+		</tr>
+		<td class="ket">
+			<a name="center">
+			<h3>HR, CENTER, B, I, U, SMALL dan BIG </h3> 
+			Pada dokumen HTML untuk membuat suatu garis mendatar / horisontal dapat menggunakan tag HR
+			Tag HR memiliki attribut seperti WIDTH untuk mengatur panjang garis, SIZE untuk mengatur
+			ketebalan garis, ALIGN untuk mengatur alignment, dan NOSHADE untuk menghilangkan efek
+			bayangan<br><br> <font class="tugas">L1c&lt;NRP&gt;.html</font><br><br>
+			<img src="images/g4.jpg">
+			</a>
+		</td>
+		</tr>
+		<td class="ket">
+			<a name="list">
+			<h3>LIST</h3>
+			Pada dokumen HTML terdapat dua jenis list, yaitu unordered list dan ordered list.
+			Unordered list adalah suatu list yang tidak memperhatikan urutan penomoran sedangkan ordered list
+			adalah list yang memperhatikan urutan penomoran.
+			Untuk membuat suatu unordered list menggunakan tag UL sedangkan untuk membuat ordered list
+			menggunakan tag OL.
+			Dan untuk mengisikan item pada list menggunakan tag LI<br><br><font class="tugas">L1e&lt;NRP&gt;.html</font><br><br>
+			<img src="images/g6.jpg"> 
+			</a>
+		</td>
+		</tr>
+		<td class="ket">
+			<a name="image">
+			<h3>Image</h3>
+			Tag IMG pada dokumen HTML digunakan untuk menambahkan gambar pada suatu halaman web.
+			Untuk menambahkan gambar dapat dilakukan dengan mengubah nilai atribut SRC disesuaikan
+			dengan nama file gambar yang diinginkan.<br><br>
+			Selain atribut SRC, tag IMG juga memiliki atribut lain seperti ALIGN, BORDER, ALT, HEIGHT,
+			dan WIDTH.
+			Atribut ALIGN digunakan untuk mengatur aligmen. Nilai yang bisa diberikan pada atribut ALIGN
+			adalah TOP, MIDDLE, dan BOTTOM.
+			Atribut BORDER digunakan untuk menentukan ketebalan garis tepi dari suatu gambar.
+			Atribut ALT digunakan untuk memberi keterangan ketika suatu gambar gagal untuk ditampilkan ke
+			web browser.
+			Atribut HEIGHT dan WIDTH digunakan untuk mengatur tinggi dan lebar gambar.
+			<br><br> <font class="tugas">L1g&lt;NRP&gt;.html</font><br><br>
+			<img src="images/g8.jpg">
+			</a>
+		</td>
+		</tr>
+		<tr>
+		<td class="ket">
+			<a name="link">
+			<h3>Link</h3> 
+			<font class="tugas">L1h&lt;NRP&gt;.html</font><br><br>
+			<img src="images/g9.jpg">
+			</a>
+		</td>
+		</tr>
+		<tr>
+		<td class="ket">
+			<a name="table">&nbsp;</a>
+			<h3>Tabel</h3>			
+			<p>Digunakan untuk menyajikan data dalam bentuk kolom dan baris, tujuannya agar informasi dapat ditampilkan secara lebih terstruktur dan tabular.
+			</p>
+            <h5>Struktur Tabel</h5>
+            <img src="images/1.jpg"><br>
+            
+            <h5>Tag-Tag pada Tabel</h5>
+            <img src="images/2.jpg"><br>
+		</td>
+		<tr>
+		<td class="ket">
+			<a name="dasar">
+			<h3>Struktur dasar Tabel</h3>
+			berikut adalah format dasar dari sebuah tabel<br>
+			<img src="images/3.jpg">
+			</a>
+
+		</td>
+		</tr>
+		</tr>
+		<tr>
+		<td class="ket">
+			<a name="heading">
+			<h3>Colspan &amp; Rowspan</h3> 
+			Colspan &amp; Rowspan berfungsi untuk menggabungan beberapa baris atau kolom pada sebuah tabel. Pada aplikasi pengolah text (MS Word, Open Office), kita mengenal yang disebut dengan <em><strong>Merge</strong></em>.
+			<img src="images/4.jpg">
+			</a>
+		</td>
+		</tr>
+		<tr>
+		<td class="ket">
+			<a name="center">
+			<h3>Border, Cellspacing &amp; Cellpadding</h3> 
+			<ul>
+            	<li><strong>Border</strong>: Mengatur garis tepi pada tabel</li>
+            	<li><strong>Cellspacing</strong>: Mengatur jarak antara satu cell dengan cell yang lain</li>
+            	<li><strong>Cellpadding</strong>: Mengatur jarak antara tepi cell dengan isi cell</li>
+            </ul>
+			<img src="images/5.jpg">
+			</a>
+		</td>
+		</tr>
+		<tr>
+		<td class="ket">
+			<a name="center">
+			<h3>Buatlah Tabel seperti dibawah ini:</h3>
+			<font class="tugas">L1i&lt;NRP&gt;.html</font><br><br>
+			<img src="images/latihan-1.png">
+			</a>
+		</td>
+		</tr>
+
+		</tr>
+		<tr>
+		<td class="ket">
+			<a name="form">
+			<h3>FORM</h3> 
+			<ul>
+            	<li>Elemen HTML yang digunakan untuk menerima bermacam-macam masukan (input) dari pengguna web.</li>
+				<li>Gunakan tag <strong>&lt;form&gt;...&lt;/form&gt;</strong> untuk membungkus elemen-elemen input</li>
+            </ul>
+            <br>
+			<h3>Macam-macam elemen form</h3> 
+            <h5>Textfield</h5>
+            Digunakan untuk memasukan huruf, angka, karakter, dll ke dalam sebuah form.<br>
+			<img src="images/6.jpg"> 
+            <br><br>
+            
+            <h5>Password</h5>
+			Digunakan untuk menyembunyikan karakter masukan.<br>
+			<img src="images/7.jpg"> 
+            <br><br>    
+            
+            <h5>Radio Button</h5>
+			Digunakan untuk melakukan satu pemilihan diantara 2 atau lebih data.<br>
+			<img src="images/8.jpg"> 
+            <br><br> 
+            
+			<h5>List Box</h5>
+			Digunakan untuk melakukan satu pemilihan diantara 2 atau lebih data menggunakan drop-down-box.<br>
+			<img src="images/9.jpg"> 
+            <br><br>  
+            
+			<h5>Check Box</h5>
+			Digunakan untuk memilih lebih dari satu data.<br>
+			<img src="images/10.jpg"> 
+            <br><br>    
+            
+			<h5>Text Area</h5>
+			Sebuah area yang dapat menampung teks yang tidak terbatas ukurannya.<br>
+			<img src="images/11.jpg"> 
+            <br><br> 
+            
+			<h5>Tombol Submit &amp; Reset</h5>
+			Tombol Submit berfungsi untuk mengirimkan data inputan, sedangankan Reset berfungsi untuk mengosongkan data inputan.<br>
+			<img src="images/12.jpg"> 
+            <br><br>
+            </a>
+            <a name="center">
+			<h3>Buatlah Form seperti dibawah ini:</h3>
+			<font class="tugas">L1j&lt;NRP&gt;.html</font><br>
+			<img src="images/latihan-22.png">
+			</a>
+
+			<br><br><font class="tugas-ket"><strong>Keterangan:</strong>
+             <br>- Kerjakan semua latihan yang diperintahkan
+             <br>- Gunakan aplikasi Dreamweaver,SUblime Text atau yang lainnya untuk mengerjakan
+             <br>- Beri nama file sesuai ketentuan (cth: <strong>L1a043040023.html</strong>)
+             <br>- Lihat hasilnya pada browser setiap kali selesai mengerjakan satu latihan
+             <br>- Lapor pada dosen apabila telah selesai mengerjakan semua latihan 
+             <br>- Save file-file latihan untuk dipelajari di rumah</font><br><br>
+        </td>
+        </tr>
+		<tr>
+		<td class="ket">
+        <a name="tugascv">
+			<h3>Tugas 1a - Membuat Curiculum Vitae</h3>
+			<font class="tugas">T1a&lt;NRP&gt;.html</font><br><br>
+			
+			Tugas Kali ini akan membuat Curiculum vitae diri Anda.. contoh tugas dapat dilihat 
+			<a href="images/CV.jpg">disini</a>. 
+			Contoh tersebut merupakan gambaran minimal yang harus terdapat pada tugas Anda.
+			Anda diajak untuk ekplorasi membuat tugas menjadi se<b>kreatif</b> dan se<b>menarik</b> 
+			mungkin dengan menggunakan Tag HTML yang telah diajarkan.
+			</a>        
+		</td>
+		</tr>
+		<tr>
+		<td class="ket">
+        <a name="tugasform">
+			<h3>Tugas 1b - Membuat Form</h3>
+			<font class="tugas">T1b&lt;NRP&gt;.html</font><br><br>
+			
+			Tugas Kali ini akan membuat Form registrasi contoh tugas dapat dilihat 
+			<a href="images/latihan-2.PNG">disini</a>. 
+			Contoh tersebut merupakan gambaran minimal yang harus terdapat pada tugas Anda.
+			Anda diajak untuk ekplorasi membuat tugas menjadi se<b>kreatif</b> dan se<b>menarik</b> 
+			mungkin dengan menggunakan Tag HTML yang telah diajarkan.
+			</a>        
+		</td>
+		</tr>
+		<tr>
+		<td class="ket">			
+			<a name="tugasindex">
+			<h3>Tugas 1c - Membuat Halaman Index</h3>
+			<font class="tugas">index&lt;NRP&gt;.html</font><br><br>
+			Letakkan semua latihan dan tugas pada modul 1 kali ini di dalam sebuah folder dengan nama tugas1. kemudian buatlah sebuah halaman index di dalam folder tersebut yang merupakan link untuk melihat latihan-latihan dan tugas Anda. Ketentuan pada halaman index adalah sebagai berikut :
+			<ol>
+				<li> Title pada halaman index bertuliskan "index tugas1 &lt;NRP&gt;"
+				<li> Tuliskan nama dan npm pada bagian atas halaman menggunakan tag komentar
+				<li> Link pertama sampai ke-delapan mengacu kepada file L1a&lt;NRP&gt;.html sampai L1j&lt;NRP&gt;.html
+				<li> Link ke-11 s/d ke-12 mengacu kepada halaman T1a&lt;NRP&gt;.html sampai T1b&lt;NRP&gt;.html
+				<li> Pada setiap halaman latihan dan tugas, berikan link yang mengacu kembali ke halaman index tugas1.
+			</ol>		
+			</td>
+		</tr>
+	</table><br>
+	<font color="#FF0000" size="+1">Jika Semua Latihan dan tugas telah dikerjakan.. Satukan file2 tersebut menjadi satu file ZIP dengan nama [ITW]-SHIFT-TUGAS0X-NRP.zip (contoh : [ITW]-SENIN13-TUGAS01-153040044.zip) kumpulkan paling lambat pada Praktikum pertemuan berikutnya</font>
+</body>
+</html>
